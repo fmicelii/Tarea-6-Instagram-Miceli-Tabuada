@@ -1,0 +1,77 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #000;
+    color: #fff;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    margin: 3px;
+    align-items: center;
+}
+
+.perfil{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contenedor_estadistica{
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.estadisticas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estadisticas p{
+    height: 0px;
+}
+
+.numero{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.letra{
+    font-size: 12px;
+}
+
+.perfil img{
+    width: 70px;
+    border-radius: 50px;
+    border: 2px solid rgb(53, 53, 53);
+}
+
+.descripcion{
+    font-size: 11px;
+    margin: 0px 0px 3px 15px;
+}
+
+.descripcion h1{
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+.descripcion h2{
+    font-weight: normal;
+    font-size: 11px;
+    color: rgb(173, 232, 255);
+}
+
+button{
+    padding: 5px;
+    border: none;
+    background-color: rgb(46, 139, 216);
+    color: #fff;
+    border-radius: 5px;
+}
