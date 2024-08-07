@@ -1,7 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0;
-    margin: 0;
     background: #000;
     color: #fff;
 }
@@ -15,6 +18,10 @@ header{
     align-items: center;
 }
 
+span{
+    color: rgb(48, 138, 255);
+}
+
 .perfil{
     display: flex;
     justify-content: space-around;
@@ -22,7 +29,6 @@ header{
 
 #contenedor_estadistica{
     display: flex;
-    gap: 10px;
     align-items: stretch;
 }
 
@@ -44,12 +50,15 @@ header{
 
 .letra{
     font-size: 12px;
+    margin: 15px 7px;
 }
 
 .perfil img{
     width: 70px;
+    padding: 3px;
     border-radius: 50px;
     border: 2px solid rgb(53, 53, 53);
+    margin-left: 5px;
 }
 
 .descripcion{
@@ -58,7 +67,7 @@ header{
 }
 
 .descripcion h1{
-    margin-top: 15px;
+    margin: 15px 0px 5px;
     font-size: 11px;
 }
 
@@ -66,6 +75,7 @@ header{
     font-weight: normal;
     font-size: 11px;
     color: rgb(173, 232, 255);
+    margin-bottom: 5px;
 }
 
 button{
@@ -74,4 +84,39 @@ button{
     background-color: rgb(46, 139, 216);
     color: #fff;
     border-radius: 5px;
+    width: 100%;
+    margin: 5px 6px;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    margin: 0px 9px;
+}
+
+.msj{
+    background-color: #313131;
+}
+
+.seleccion{
+    margin-top: 15px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.seleccion img {
+    padding: 0 45px;
+}
+
+.grid{
+    border-bottom: 1px solid white ;
+}
+
+
+.fotos{
+    height: 162px;
+}
+
+.fotos img{
+    width: 100px;
+    height: 100px;
 }
