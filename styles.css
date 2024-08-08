@@ -9,14 +9,19 @@ body{
     color: #fff;
 }
 
-
-header{
+.headcelu{
     display: flex;
     justify-content: space-between;
     font-size: 8px;
     margin: 3px;
     align-items: center;
 }
+
+.headpc{
+    display: none;
+}
+
+
 
 span{
     color: rgb(48, 138, 255);
@@ -104,19 +109,30 @@ button{
 }
 
 .seleccion img {
-    padding: 0 45px;
+    padding: 0 25px;
 }
 
 .grid{
     border-bottom: 1px solid white ;
 }
 
-
-.fotos{
-    height: 162px;
+.fotos img{
+    width: 32.4vw;
+    height: 32.4vw;
 }
 
-.fotos img{
-    width: 100px;
-    height: 100px;
+
+@media(min-width: 770px){
+    .headcelu{
+        display: none;
+    }
+    
+    .headpc{
+        display: flex;
+        
+    }
+    .headpc img{
+        width: 150px;
+        color:#000;
+    }
 }
