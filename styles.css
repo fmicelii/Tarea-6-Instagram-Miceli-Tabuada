@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font-family: "roboto-r";
+    font-family: "roboto-regular";
     background: #000;
     color: #fff;
 }
@@ -25,7 +25,7 @@ span{
 }
 .perfil{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 #contenedor_estadistica{
     display: flex;
@@ -83,9 +83,6 @@ button{
     justify-content: center;
     margin: 0px 9px;
 }
-.msj{
-    background-color: #313131;
-}
 .seleccion{
     margin-top: 15px;
     display: flex;
@@ -98,8 +95,8 @@ button{
     border-top: 1px solid white;
 }
 .fotos img{
-    width: 32.4vw;
-    height: 32.4vw;
+    width: 32vw;
+    height: 32vw;
 }
 .qp{
     display: none;
@@ -107,6 +104,12 @@ button{
 
 /* Estilos para pantallas grandes */
 @media(min-width: 768px){
+    main{
+        padding: 30px 20px 0 20px;
+        max-width: 935px;
+        margin: 0 auto;
+    }
+
     .headcelu{
         display: none;
     }
@@ -117,8 +120,9 @@ button{
         padding: 6px;
     }
     .headpc img{
-        width: 100px;
-        height: 45px;
+        width: 115px;
+        height: 55px;
+        cursor: pointer;
     }
     .mitad1{
         width: 50%;
@@ -133,15 +137,19 @@ button{
     }
     .headpc button{
         width: auto;
-        padding: 9px 14px;
+        padding: 8px 14px;
         font-weight: bold;
+        cursor: pointer;
+    }
+    .login:hover{
+        background-color: rgb(58, 166, 255);
     }
     .register{
         background: none;
         color: rgb(46, 139, 216);
     }
-    main{
-        padding: 30px 20px 0 20px;
+    .register:hover{
+        color: rgb(137, 202, 255);
     }
     .perfilpc img{
         width: 140px;
@@ -161,6 +169,7 @@ button{
     .perfilpc{
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-bottom: 40px;
     }
     .fotopc{
@@ -192,15 +201,21 @@ button{
         padding: 8px 18px;
         font-weight: bold;
         font-size: 15px;
-        background: #313131;
+        background: rgb(49, 49, 49);
+        cursor: pointer;
+    }
+    .botonespc button:hover{
+    background-color: rgb(77, 77, 77);
     }
     #contenedor_estadisticapc{
         display: flex;
         justify-content: space-between;
         margin: 0 0 20px;
+        font-weight: 700;
     }
-    .estadisticaspc{
-
+    .estadisticaspc:hover p,.estadisticaspc:hover span {
+        color: rgb(133, 133, 133);
+        cursor: pointer;
     }
     .estadisticaspc span{
         color: rgb(255, 255, 255);
@@ -208,23 +223,26 @@ button{
     .letra{
         margin: 0;
     }
-    span{
-        color: rgb(125, 183, 216);
-    }
     .descripcionpc{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         height: 100%;
     }
+    .descripcionpc span{
+        color: rgb(125, 183, 216);
+        cursor: pointer;
+    }
     .seleccion{
         border-top: 1px solid #313131;
         display: flex;
+        justify-content: space-evenly;
     }
     .seleccion1{
         display: flex;
         padding: 20px 0;
         align-items: center;
+        cursor: pointer;
     }
     .BARRITA{
         border-top: 1px solid #fff;
@@ -239,6 +257,16 @@ button{
         display: block;
     }
     .fotos img{
-        width: 32.96%;
+        width: 300px;
+        height: 300px;
+        margin: 2px;
     }
+    .fotos img:hover{
+        opacity: 0.5;
+    }
+    .fotos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
